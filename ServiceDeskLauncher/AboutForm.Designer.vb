@@ -26,14 +26,15 @@ Partial Class AboutForm
         Me.Button1 = New System.Windows.Forms.Button()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Transparent
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(413, 249)
+        Me.Button1.Location = New System.Drawing.Point(12, 247)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(49, 21)
         Me.Button1.TabIndex = 0
@@ -55,21 +56,23 @@ Partial Class AboutForm
         '
         Me.Button2.BackColor = System.Drawing.Color.Transparent
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(342, 220)
+        Me.Button2.Location = New System.Drawing.Point(12, 218)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(120, 23)
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "Log a support ticket"
         Me.Button2.UseVisualStyleBackColor = False
         '
-        'Button3
+        'PictureBox1
         '
-        Me.Button3.Location = New System.Drawing.Point(36, 203)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(328, 198)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(134, 70)
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
         '
         'AboutForm
         '
@@ -79,16 +82,19 @@ Partial Class AboutForm
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(466, 296)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.LinkLabel2)
         Me.Controls.Add(Me.Button1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "AboutForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Connect Up Service Desk"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -96,5 +102,5 @@ Partial Class AboutForm
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
