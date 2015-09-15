@@ -68,9 +68,9 @@ Partial Class AboutForm
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(328, 198)
+        Me.PictureBox1.Location = New System.Drawing.Point(332, 214)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(134, 70)
+        Me.PictureBox1.Size = New System.Drawing.Size(134, 73)
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
@@ -92,6 +92,7 @@ Partial Class AboutForm
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "AboutForm"
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Connect Up Service Desk"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
