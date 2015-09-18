@@ -8,9 +8,9 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("ServiceDeskLauncher")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
+<Assembly: AssemblyTitle("ServiceDeskLauncher")>
+<Assembly: AssemblyDescription("Connect Up Tray Icon")>
+<Assembly: AssemblyCompany("Connect Up Support Services")>
 <Assembly: AssemblyProduct("ServiceDeskLauncher")> 
 <Assembly: AssemblyCopyright("Copyright ©  2015")> 
 <Assembly: AssemblyTrademark("")> 

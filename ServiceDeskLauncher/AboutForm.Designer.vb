@@ -23,56 +23,56 @@ Partial Class AboutForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AboutForm))
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.lnkConnectUp = New System.Windows.Forms.LinkLabel()
+        Me.btnSupport = New System.Windows.Forms.Button()
+        Me.pbxTeamViewer = New System.Windows.Forms.PictureBox()
+        CType(Me.pbxTeamViewer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnClose
         '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(12, 247)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(49, 21)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Close"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnClose.BackColor = System.Drawing.Color.Transparent
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Location = New System.Drawing.Point(12, 247)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(49, 21)
+        Me.btnClose.TabIndex = 0
+        Me.btnClose.Text = "Close"
+        Me.btnClose.UseVisualStyleBackColor = False
         '
-        'LinkLabel2
+        'lnkConnectUp
         '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel2.Location = New System.Drawing.Point(344, 0)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(118, 13)
-        Me.LinkLabel2.TabIndex = 3
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "www.connect-up.co.uk"
+        Me.lnkConnectUp.AutoSize = True
+        Me.lnkConnectUp.BackColor = System.Drawing.Color.Transparent
+        Me.lnkConnectUp.Location = New System.Drawing.Point(344, 0)
+        Me.lnkConnectUp.Name = "lnkConnectUp"
+        Me.lnkConnectUp.Size = New System.Drawing.Size(118, 13)
+        Me.lnkConnectUp.TabIndex = 3
+        Me.lnkConnectUp.TabStop = True
+        Me.lnkConnectUp.Text = "www.connect-up.co.uk"
         '
-        'Button2
+        'btnSupport
         '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(12, 218)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(120, 23)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Log a support ticket"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnSupport.BackColor = System.Drawing.Color.Transparent
+        Me.btnSupport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSupport.Location = New System.Drawing.Point(12, 218)
+        Me.btnSupport.Name = "btnSupport"
+        Me.btnSupport.Size = New System.Drawing.Size(120, 23)
+        Me.btnSupport.TabIndex = 4
+        Me.btnSupport.Text = "Log a support ticket"
+        Me.btnSupport.UseVisualStyleBackColor = False
         '
-        'PictureBox1
+        'pbxTeamViewer
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(332, 214)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(134, 73)
-        Me.PictureBox1.TabIndex = 5
-        Me.PictureBox1.TabStop = False
+        Me.pbxTeamViewer.BackColor = System.Drawing.Color.Transparent
+        Me.pbxTeamViewer.BackgroundImage = CType(resources.GetObject("pbxTeamViewer.BackgroundImage"), System.Drawing.Image)
+        Me.pbxTeamViewer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbxTeamViewer.Location = New System.Drawing.Point(332, 214)
+        Me.pbxTeamViewer.Name = "pbxTeamViewer"
+        Me.pbxTeamViewer.Size = New System.Drawing.Size(134, 73)
+        Me.pbxTeamViewer.TabIndex = 5
+        Me.pbxTeamViewer.TabStop = False
         '
         'AboutForm
         '
@@ -82,10 +82,10 @@ Partial Class AboutForm
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(466, 296)
         Me.ControlBox = False
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.LinkLabel2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.pbxTeamViewer)
+        Me.Controls.Add(Me.btnSupport)
+        Me.Controls.Add(Me.lnkConnectUp)
+        Me.Controls.Add(Me.btnClose)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -94,14 +94,14 @@ Partial Class AboutForm
         Me.Name = "AboutForm"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Connect Up Service Desk"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "Connect Up Supoort"
+        CType(Me.pbxTeamViewer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnClose As System.Windows.Forms.Button
+    Friend WithEvents lnkConnectUp As System.Windows.Forms.LinkLabel
+    Friend WithEvents btnSupport As System.Windows.Forms.Button
+    Friend WithEvents pbxTeamViewer As PictureBox
 End Class
